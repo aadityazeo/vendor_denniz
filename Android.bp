@@ -13,26 +13,108 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.oplus.hardware.biometrics.fingerprintpay-V1.0-java",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/vendor.oplus.hardware.biometrics.fingerprintpay-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "vendor.oplus.hardware.displaypanelfeature-V1.0-java",
 	owner: "oneplus",
 	jars: ["proprietary/system_ext/framework/vendor.oplus.hardware.displaypanelfeature-V1.0-java.jar"],
 	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.health@2.1",
+dex_import {
+	name: "vendor.oplus.hardware.appradio-V1.0-java",
 	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.appradio-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.biometrics.fingerprintpay-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.biometrics.fingerprintpay-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.charger-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.charger-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.cryptoeng-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.cryptoeng-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.fido.fidoca-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.fido.fidoca-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.ims-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.ims-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.mtkmodemaci-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.mtkmodemaci-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.oplusSensor-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.oplusSensor-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.orms-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.orms-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.orms.ormsHalService-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.orms.ormsHalService-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.performance-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.performance-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.radio-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.radio-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.stability.oplus_project-V1.0-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.stability.oplus_project-V1.0-java.jar"],
+	device_specific: true,
+}
+
+dex_import {
+	name: "vendor.oplus.hardware.wifi-V1.1-java",
+	owner: "oneplus",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.wifi-V1.1-java.jar"],
+	device_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -81,15 +163,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_soter",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_soter.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "oplus_appradio_device_manifest",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/oplus_appradio_device_manifest.xml",
@@ -123,5 +196,149 @@ prebuilt_etc_xml {
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplusSensor",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplusSensor.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_cammidasservice",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cammidasservice.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_charger",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_charger.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_displaypanelfeature",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_displaypanelfeature.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_engcamera",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_engcamera.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_fido",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fido.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_misc",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_misc.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_mtkmodemaci",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_mtkmodemaci.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_nfc",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_nfc.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_orms",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_orms.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_performance",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_performance.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_stability_project",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_stability_project.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_touch",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_touch.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_sedsnfc_sn100t",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_sedsnfc_sn100t.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "oplus_wifi_service_device",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/oplus_wifi_service_device.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.oplus.hardware.hdcp@1.0-service",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/vendor.oplus.hardware.hdcp@1.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
 }
 
